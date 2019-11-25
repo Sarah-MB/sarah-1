@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check</title>
+        <style>
+            body{
+                background: #ffffff;
+                height: 100vh;
+                background-size: cover;
+            }
+            .toggle> span {
+    width: 30px;
+    height: 5px;
+    background: #11CDFC;
+    display: block;
+    margin: 5px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+  }
+  .btn-color{
+      background: #11CDFC;
+      color: white;
+  }
+  hr {
+      background-color: #11CDFC;
+
+  }
+
+  .hide {
+      position: absolute;
+      left: -100%;
+      transition: all 500ms linear;
+  }
+
+  .active{
+    left: 0%;
+    transition: all 500ms linear;
+  }
+
+  .bg, li {
+      z-index: 999;
+      background: #11CDFC;
+  }
+  .sm-hide {
+      display: none;
+  }
+
+  .center {
+      text-align: center;
+      padding-top: 10px;
+
+  }
+  ul li a  {
+      cursor: pointer;
+      text-decoration: none;
+
+  }
+
+  ul li :hover {
+      background: #11CDFC;
+      text-decoration: none;
+      background-size: 50px;
+      border-radius: 3px;
+  }
+  .relative {
+      position: relative;
+  }
+  @media screen and (min-width: 576px){
+    /* 576px and Up */
+    .sm-hide {
+        display: block;
+    }
+    .center {
+        text-align: start;
+        padding-top: 0;
+    }
+    .star-grid {
+      padding: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    /* 768px and up */
+    .lead {
+        margin-top: 10%;
+    }
+    .sm-hide {
+       margin-top: -5%
+    }
+
+
+  }
+
+  @media screen and (min-width: 998px){
+    /* 998px and up */
+
+  }
+  @media screen and (min-width: 1200px){
+    /* 1200px and up */
+
+  }
+            .search-form{
+                margin-top: 15px;
+                float: right;
+                margin-right: 100px;
+              }
+              input{
+                padding: 7px;
+                margin-top: 2vh;
+                float: centre;
+                border: none;
+                font-size: 16px;
+                font-family: sans-serif;
+              }
+              button{
+                float: right;
+                width: 175;
+                height: 59;
+                margin-top: 2vh;
+                background:rgb(8, 197, 211);
+                color: white;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                position: relative;
+                padding: 7px;
+                font-family: sans-serif;
+                border: none;
+                font-size: 16px;
+              }
+            h4 {
+                font-size: 20px;
+                height: 2vh;
+                font-family: Ubuntu;
+                text-align: center;
+                color: black;
+
+            }
+            .login-page{
+                width: 360px;
+                padding: 10% 0 0;
+                margin: auto;
+            }
+            .form {
+                position: relative;
+                z-index: 1;
+                background: #ffffff;
+                max-width: 360px;
+                margin: 0 auto 100px;
+                padding: 45px;
+                text-align: center;
+            }
+            .form input{
+                font-family: "Roboto" sans-serif;
+                outline: 1;
+                background: rgb(197, 242, 245);
+                width: 150%;
+                border: 0;
+                margin: 0 0 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+            .form button {
+                font-family: "Roboto" sans-serif;
+                text-transform: uppercase;
+                outline: 0;
+                background: #4CAF50;
+                width: 35%;
+                height: 10%;
+                float: center;
+                border: 0;
+                padding: 15px;
+                color: #ffffff;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+            <nav>
+                    <image class="mr-auto" src="https://res.cloudinary.com/sima-inc/image/upload/v1573594174/VAR/image/logo_ussmqj.jpg" width="200" height="80"></image>
+                    <div class="search-form">
+                    <form class ="search-form">
+                        <input type = "text" placeholder ="search for services.....">
+                        <button type="submit" class="btn btn-color text-uppercase">SEARCH</button>
+                  </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class=" col-1 toggle " onclick="toggler()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   </div>
+                   <div class="col-11">
+                       <hr>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col control hide bg">
+                        <ul class="list-group list-group-flush text-center text-uppercase bg ">
+                            <li  class="list-group-item"><a href="#">Home</a></li>
+                            <li  class="list-group-item"><a href="#">Lorem</a></li>
+                            <li  class="list-group-item"><a href="#">Ipsum</a></li>
+                            <li  class="list-group-item"><a href="#">Leret</a></li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+               
+                  </nav>
+        <h4>SUPPORT SERVICES</h4>
+        <div class="log-page">
+            <div class="form">
+        <form class="register-form">
+                <div style="padding-left: 1.00rem; padding-right: 1.00rem">
+                <div class="form-group row">
+                <div class="col-sm-6">
+                        <span class="card-text" style="color: black; padding-left: 10px"> NAME </span>
+            <input type="text"></div>
+            <div class="col-sm-6">
+                    <span class="card-text" style="color: black; padding-left: 10px"> CONTACT </span>
+            <input type="text">
+            <div class="col-sm-6">
+                    <span class="card-text" style="color: black; padding-left: 10px"> TITLE</span>
+            <input type="text">
+            <div class="col-sm-6">
+                    <span class="card-text" style="color: black; padding-left: 10px"> MESSAGE</span>
+            <input type="text">
+        </form>
+        <button>SEND</button>
+        <!-- end of service section -->
+<!-- footer starts -->
+
+<footer id="footer mt-5 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+            <img src="./images/students.png"  class="img-fluid" width="1200px"  alt="">
+        </div>
+        <!-- <div class="col-10 pr-5 mt-1">
+            <hr>
+        </div> -->
+        </div>
+       
+        <h5 class="mt-2">Powered By</h5>
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3 ">
+                    <img src="./images/sima animation 1.png" alt="">
+            </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 center text-success text-uppercase">
+             <h6>Contact us</h6>  
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-2 center">
+                <img src="./images/imgbin-whatsapp-logo-whatsapp-whatsapp-logo-UBd989PM32apNnWJLnCuzmmAY 1.png" width="20px" alt=""><span class="text-dark">+2347012296054</span>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 center">
+                <img src="./images/imgbin-logo-telephone-call-icon-green-phone-symbol-green-incoming-call-illustration-c7Zj6HKndGGXLc6eLcvx313ky 1.png" width="20px" alt=""><span class="text-dark">+2348151088643</span>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 center">
+                <img src="./images/imgbin-triangle-text-brand-communication-gmail-gmail-logo-7rL17Yd3DhhWGUcksPYffCa9S 2.png" width="20px" alt=""><span class="text-dark">osigobo@gmail.com</span>
+        </div>
+        </div>
+    </div>
+
+   
+       
+</footer>
+<!-- end footer starts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- boostrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+  
+        AOS.init({
+          duration: 2000,
+        });
+        </script>
+        
+            </div>
+        </div>
+    </body>
+</html>
